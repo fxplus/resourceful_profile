@@ -197,8 +197,8 @@ projects[] = "rubik"
 projects[stanley][subdir] = "contrib"
 
 projects[] = "stark"
-projects[] = "tao"
-projects[] = "zen"
+;projects[] = "tao"
+;projects[] = "zen"
 ; Modules
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
@@ -315,7 +315,7 @@ projects[webform_dynamic_recipients][type] = "module"
 ;projects[fx_themes][download][type] = "git"
 ;projects[fx_themes][download][url] = "git@github.com:tombola/fx_themes.git"
 ;projects[fx_themes][download][branch] = "hologram"
-projects[] = "stark"
+;   projects[] = "stark"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
