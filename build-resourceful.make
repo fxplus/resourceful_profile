@@ -7,7 +7,7 @@ projects[drupal][type] = core
 projects[drupal][version] = 7.34
 
 ; Include the definition for how to build Drupal core directly, including patches:
-; includes[] = drupal-org-core.make
+includes[] = drupal-org-core.make
 
 ; Download the resourceful_profile install profile and recursively build all its dependencies:
 projects[resourceful_profile][subdir] = "custom"
