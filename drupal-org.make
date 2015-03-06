@@ -34,7 +34,6 @@ projects[devel][subdir] = "contrib/#DEVELOPER"
 ;projects[crazyegg][subdir] = "contrib"
 ;projects[spaces][subdir] = "contrib"
 
-
 projects[auto_nodetitle][subdir] = "contrib"
 
 ; Presentation
@@ -46,22 +45,10 @@ projects[context][subdir] = "contrib"
 projects[ds][subdir] = "contrib"
 ;   projects[exclude_node_title][subdir] = "contrib"
 
-
-
-
 ; Search
 
 ;projects[facetapi][subdir] = "contrib"
 ;projects[facetapi_pretty_paths][subdir] = "contrib"
-
-
-
-
-
-
-
-
-
 
 projects[features][subdir] = "contrib"
 
@@ -69,8 +56,6 @@ projects[features][subdir] = "contrib"
 ;projects[feeds_tamper][subdir] = "contrib"
 ;projects[feeds_tamper_php][subdir] = "contrib"
 ;projects[feeds_xpathparser][subdir] = "contrib"
-
-
 
 projects[field_group][subdir] = "contrib"
 
@@ -99,8 +84,6 @@ projects[login_destination][subdir] = "contrib"
 projects[media_vimeo][subdir] = "contrib"
 
 projects[media_youtube][subdir] = "contrib"
-
-
 
 projects[menu_block][subdir] = "contrib"
 
@@ -169,8 +152,6 @@ projects[view_unpublished][subdir] = "contrib"
 
 projects[viewfield][subdir] = "contrib"
 
-
-
 projects[webform][subdir] = "contrib"
 
 projects[workbench][subdir] = "contrib"
@@ -190,10 +171,6 @@ projects[bootstrap][subdir] = "contrib"
 
 projects[mothership][subdir] = "contrib/mothership"
 
-projects[] = "navin"
-projects[] = "omega_kickstart"
-projects[] = "respond"
-projects[] = "rubik"
 projects[stanley][subdir] = "contrib"
 
 projects[] = "stark"
