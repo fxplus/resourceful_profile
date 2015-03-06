@@ -179,27 +179,27 @@ projects[] = "stark"
 ; Modules
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[apply_filter][download][type] = ""
-projects[apply_filter][download][url] = ""
-projects[apply_filter][type] = "module"
+;projects[apply_filter][download][type] = ""
+;projects[apply_filter][download][url] = ""
+;projects[apply_filter][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[ckeditor_config][download][type] = ""
-projects[ckeditor_config][download][url] = ""
-projects[ckeditor_config][type] = "module"
+;projects[ckeditor_config][download][type] = ""
+;projects[ckeditor_config][download][url] = ""
+;projects[ckeditor_config][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[contextual_nodelinks][download][type] = ""
-projects[contextual_nodelinks][download][url] = ""
-projects[contextual_nodelinks][type] = "module"
+;projects[contextual_nodelinks][download][type] = ""
+;projects[contextual_nodelinks][download][url] = ""
+;projects[contextual_nodelinks][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[deduplicate_nodes][download][type] = ""
-projects[deduplicate_nodes][download][url] = ""
-projects[deduplicate_nodes][type] = "module"
+;projects[deduplicate_nodes][download][type] = ""
+;projects[deduplicate_nodes][download][url] = ""
+;projects[deduplicate_nodes][type] = "module"
 
 projects[eu-cookie-compliance][type] = "module"
 projects[eu-cookie-compliance][download][type] = "git"
@@ -314,93 +314,93 @@ projects[webform_dynamic_recipients][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[ckeditor][download][type] = "get"
-libraries[ckeditor][download][url] = ""
+libraries[ckeditor][download][type] = "file"
+libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6.1/ckeditor_3.6.6.1.tar.gz"
 libraries[ckeditor][directory_name] = "ckeditor"
 libraries[ckeditor][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[fullcalendar][download][type] = ""
-libraries[fullcalendar][download][url] = ""
+libraries[fullcalendar][download][type] = "file"
+libraries[fullcalendar][download][url] = "https://github.com/arshaw/fullcalendar/releases/download/v1.5.4/fullcalendar-1.5.4.zip"
 libraries[fullcalendar][directory_name] = "fullcalendar"
 libraries[fullcalendar][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[GoogleNexusWebsiteMenu][download][type] = ""
-libraries[GoogleNexusWebsiteMenu][download][url] = ""
-libraries[GoogleNexusWebsiteMenu][directory_name] = "GoogleNexusWebsiteMenu"
-libraries[GoogleNexusWebsiteMenu][type] = "library"
+;libraries[GoogleNexusWebsiteMenu][download][type] = ""
+;libraries[GoogleNexusWebsiteMenu][download][url] = ""
+;libraries[GoogleNexusWebsiteMenu][directory_name] = "GoogleNexusWebsiteMenu"
+;libraries[GoogleNexusWebsiteMenu][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[htmlpurifier][download][type] = ""
-libraries[htmlpurifier][download][url] = ""
-libraries[htmlpurifier][directory_name] = "htmlpurifier"
-libraries[htmlpurifier][type] = "library"
+;libraries[htmlpurifier][download][type] = ""
+;libraries[htmlpurifier][download][url] = ""
+;libraries[htmlpurifier][directory_name] = "htmlpurifier"
+;libraries[htmlpurifier][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[iCalcreator][download][type] = ""
-libraries[iCalcreator][download][url] = ""
-libraries[iCalcreator][directory_name] = "iCalcreator"
-libraries[iCalcreator][type] = "library"
+;libraries[iCalcreator][download][type] = ""
+;libraries[iCalcreator][download][url] = ""
+;libraries[iCalcreator][directory_name] = "iCalcreator"
+;libraries[iCalcreator][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[jquery.cycle][download][type] = ""
-libraries[jquery.cycle][download][url] = ""
+libraries[jquery.cycle][download][type] = "file"
+libraries[jquery.cycle][download][url] = "http://malsup.github.io/jquery.cycle.lite.js"
 libraries[jquery.cycle][directory_name] = "jquery.cycle"
 libraries[jquery.cycle][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[jquery.imagesloaded][download][type] = ""
-libraries[jquery.imagesloaded][download][url] = ""
-libraries[jquery.imagesloaded][directory_name] = "jquery.imagesloaded"
-libraries[jquery.imagesloaded][type] = "library"
+;libraries[jquery.imagesloaded][download][type] = ""
+;libraries[jquery.imagesloaded][download][url] = ""
+;libraries[jquery.imagesloaded][directory_name] = "jquery.imagesloaded"
+;libraries[jquery.imagesloaded][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[phpmailer][download][type] = ""
-libraries[phpmailer][download][url] = ""
-libraries[phpmailer][directory_name] = "phpmailer"
-libraries[phpmailer][type] = "library"
+;libraries[phpmailer][download][type] = ""
+;libraries[phpmailer][download][url] = ""
+;libraries[phpmailer][directory_name] = "phpmailer"
+;libraries[phpmailer][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[placeholder][download][type] = ""
-libraries[placeholder][download][url] = ""
-libraries[placeholder][directory_name] = "placeholder"
-libraries[placeholder][type] = "library"
+;libraries[placeholder][download][type] = ""
+;libraries[placeholder][download][url] = ""
+;libraries[placeholder][directory_name] = "placeholder"
+;libraries[placeholder][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[rijksoverheid-cookie-opt-in][download][type] = ""
-libraries[rijksoverheid-cookie-opt-in][download][url] = ""
+libraries[rijksoverheid-cookie-opt-in][download][type] = "file"
+libraries[rijksoverheid-cookie-opt-in][download][url] = "http://www.rijksoverheid.nl/bestanden/documenten-en-publicaties/publicaties/2013/11/21/download-rijksoverheid-cookie-opt-in-zip/rijksoverheid-cookie-opt-out-v2.zip"
 libraries[rijksoverheid-cookie-opt-in][directory_name] = "rijksoverheid-cookie-opt-in"
 libraries[rijksoverheid-cookie-opt-in][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[rs][download][type] = ""
-libraries[rs][download][url] = ""
-libraries[rs][directory_name] = "rs"
-libraries[rs][type] = "library"
+;libraries[rs][download][type] = ""
+;libraries[rs][download][url] = ""
+;libraries[rs][directory_name] = "rs"
+;libraries[rs][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[sidr][download][type] = ""
-libraries[sidr][download][url] = ""
-libraries[sidr][directory_name] = "sidr"
-libraries[sidr][type] = "library"
+;libraries[sidr][download][type] = ""
+;libraries[sidr][download][url] = ""
+;libraries[sidr][directory_name] = "sidr"
+;libraries[sidr][type] = "library"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-libraries[superfish.x][download][type] = ""
-libraries[superfish.x][download][url] = ""
-libraries[superfish.x][directory_name] = "superfish.x"
-libraries[superfish.x][type] = "library"
+;libraries[superfish.x][download][type] = ""
+;libraries[superfish.x][download][url] = ""
+;libraries[superfish.x][directory_name] = "superfish.x"
+;libraries[superfish.x][type] = "library"
 
 
