@@ -22,7 +22,8 @@ projects[entityreference][subdir] = "contrib"
 
 
 ; Administration
-projects[admin_menu][subdir] = "contrib/#DEVELOPER"
+projects[admin_menu][subdir] = "contrib"
+projects[module_filter][subdir] = "contrib"
 ;   projects[book_helper][subdir] = "contrib"
 ;projects[ccl][subdir] = "contrib"
 ;projects[entityreference_prepopulate][subdir] = "contrib"
@@ -35,6 +36,9 @@ projects[devel][subdir] = "contrib/#DEVELOPER"
 ;projects[spaces][subdir] = "contrib"
 
 projects[auto_nodetitle][subdir] = "contrib"
+
+; Navigation
+projects[menu_block][subdir] = "contrib"
 
 ; Presentation
 ;   projects[block_class][subdir] = "contrib"
@@ -85,11 +89,7 @@ projects[media_vimeo][subdir] = "contrib"
 
 projects[media_youtube][subdir] = "contrib"
 
-projects[menu_block][subdir] = "contrib"
-
 projects[metatag][subdir] = "contrib"
-
-projects[module_filter][subdir] = "contrib"
 
 projects[name][subdir] = "contrib"
 
@@ -162,16 +162,18 @@ projects[wysiwyg][version] = "2.x"
 projects[xmlsitemap][subdir] = "contrib"
 
 ; Themes
-projects[] = "sasson"
-projects[] = "omega"
-projects[] = "antonelli"
-projects[] = "basic"
-projects[] = "beta"
+;projects[] = "sasson"
+;projects[] = "omega"
+;projects[] = "antonelli"
+;projects[] = "basic"
+;projects[] = "beta"
 projects[bootstrap][subdir] = "contrib"
+projects[mothership][subdir] = "contrib"
 
-projects[mothership][subdir] = "contrib/mothership"
-
+; Admin Themes
+projects[adminimal_theme][subdir] = "contrib"
 projects[stanley][subdir] = "contrib"
+projects[stanley][version] = "2.x"
 
 projects[] = "stark"
 ;projects[] = "tao"

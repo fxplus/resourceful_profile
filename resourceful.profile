@@ -13,3 +13,14 @@ function resourceful_form_install_configure_form_alter(&$form, $form_state) {
   // Pre-populate the site name with the server name.
   $form['site_information']['site_name']['#default_value'] = $_SERVER['SERVER_NAME'];
 }
+
+function resourceful_install_tasks() {
+  $task['machine_name'] = array(
+    'display_name' => st('Human-readable task name'),
+    'display' => TRUE,
+    'type' => 'normal',
+    'run' => INSTALL_TASK_RUN_IF_REACHED,
+    'function' => 'function_to_execute',
+  );
+}
+?>

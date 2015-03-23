@@ -3,5 +3,20 @@ description = Install profile based on Minimal.
 version = VERSION
 core = 7.x
 dependencies[] = block
+dependencies[] = book
 dependencies[] = dblog
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = admin_menu
+dependencies[] = module_filter
+dependencies[] = menu_block
+dependencies[] = backup_migrate
+
+dependencies[] = entityreference
+dependencies[] = field_group
+dependencies[] = link
+dependencies[] = media
+
+; remove following dependencies ?
+dependencies[] = viewfield
 

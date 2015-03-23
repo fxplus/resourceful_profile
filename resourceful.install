@@ -12,8 +12,49 @@
  * @see system_install()
  */
 function resourceful_install() {
-  // Enable some standard blocks.
+  resourceful_enable_themes();
+  resourceful_enable_blocks();
+
+  resourceful_roles_permissions();
+
+
+  // Create About/Contact links in the main menu.
+  $item = array(
+    'link_title' => st('About'),
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item);
+  // Create About/Contact links in the main menu.
+  $item = array(
+    'link_title' => st('Contact'),
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item);
+
+  /*--------------Miscellaneous tweaks---------------*/
+  // $bartiksettings = variable_get('theme_bartik_settings', default);
+  // $bartiksettings['toggle_logo'] = 0;
+
+  // variable_set('theme_bartik_settings', $bartiksettings) 
+}
+
+function resourceful_enable_themes() {
+  /**
+   * Set Rubik as the Admin Theme
+   */
+  // theme_enable(array("stanley"));
+  theme_enable(array("adminimal_theme"));
+  theme_enable(array("bartik"));
+  variable_set('admin_theme', 'adminimal_theme');
+  variable_set("theme_default", "bartik");
+}
+
+function resourceful_enable_blocks() {
   $default_theme = variable_get('theme_default', 'bartik');
+  // Enable some standard blocks.
+  resourceful_add_menu_block();
   $values = array(
     array(
       'module' => 'system',
@@ -39,7 +80,7 @@ function resourceful_install() {
       'module' => 'system',
       'delta' => 'navigation',
       'theme' => $default_theme,
-      'status' => 1,
+      'status' => 0,
       'weight' => 0,
       'region' => 'sidebar_first',
       'pages' => '',
@@ -49,7 +90,7 @@ function resourceful_install() {
       'module' => 'system',
       'delta' => 'management',
       'theme' => $default_theme,
-      'status' => 1,
+      'status' => 0,
       'weight' => 1,
       'region' => 'sidebar_first',
       'pages' => '',
@@ -65,17 +106,106 @@ function resourceful_install() {
       'pages' => '',
       'cache' => -1,
     ),
+    array(
+      'module' => 'search',
+      'delta' => 'form',
+      'theme' => $default_theme,
+      'status' => 1,
+      'weight' => -10,
+      'region' => 'dashboard_sidebar',
+      'pages' => '',
+      'cache' => -1,
+    ),
   );
   $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
   foreach ($values as $record) {
     $query->values($record);
   }
   $query->execute();
+}
 
-  // Allow visitor account creation, but with administrative approval.
-  variable_set('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL);
+function resourceful_add_menu_block() {
+  // configure menu block module
+  require_once(drupal_get_path('module', 'menu_block') .'/menu_block.admin.inc');
+  // print_r'd the relevant values out of menu_block_add_block_form_submit()
+  $values = array (
+    'module' => 'menu_block',
+    'delta' => NULL,
+    'title' => '',
+    'display_options' => 'advanced',
+    'title_link' => 1,
+    'admin_title' => 'Book/Site navigation',
+    'menu_name' => '_active',
+    'level' => '2',
+    'follow' => 0,
+    'follow_parent' => 'active',
+    'depth' => '0',
+    'expanded' => 0,
+    'sort' => 0,
+    'parent' => '_active:0',
+    'regions' => 
+    array (
+      'bartik' => 'sidebar_first',
+      '' => 'sidebar_first',
+    ),
+    'visibility' => '0',
+    'pages' => '',
+    'roles' => 
+    array (
+      1 => 0,
+      2 => 0,
+    ),
+    'custom' => '0',
+    'types' => 
+    array (
+      'book' => 0,
+    ),
+    'visibility__active_tab' => 'edit-path',
+    'submit' => 'Save block',
+    'form_id' => 'menu_block_add_block_form',
+    'op' => 'Save block',
+    'parent_mlid' => 0,
+  );
+
+  $form = array();
+  $form_state = array('values'=>$values);
+  menu_block_add_block_form_submit($form, $form_state);
+
+  // configure menu_block admin/config/user-interface/menu-block
+  variable_set('menu_block_ids', array(1));
+  variable_set('menu_block_menu_order', array( '/^book\\-toc\\-.+/' => '' ));
+    // create drupal block
+}
+
+function resourceful_roles_permissions() {
+  // Disable visitor account creation.
+  variable_set('user_register', USER_REGISTER_ADMINISTRATORS_ONLY);
 
   // Enable default permissions for system roles.
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
+
+  $role = new stdClass();
+  $role->name = 'editor';
+  // $role->weight = 10;
+  user_role_save($role);
 }
+
+// function resourceful_example_content() {
+//   $path = dirname(__FILE__);
+//   $files = file_scan_directory($path . '/' . $dir, "\.${ext}$");
+//   asort($files);
+
+//   foreach ($files as $file) {
+//     $node = array();
+//     ob_start();
+//     include $file->filename;
+//     ob_end_clean();
+
+//     $node = (object) $node;
+//     $node->uid = $account ? $account->uid : 1;
+//     $node->format = $formats['Full HTML'];
+//     $node->field_body[0]['format'] = $formats['Full HTML'];
+//     node_save($node);
+//   }
+// }
