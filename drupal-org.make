@@ -10,6 +10,12 @@ projects[] = "drupal"
 ;projects[startik][download][url] = ""
 ;projects[startik][type] = "module"
 
+; Custom modules and features
+projects[resourceful_features][type] = "module"
+projects[resourceful_features][download][type] = "git"
+projects[resourceful_features][download][url] = "https://github.com/fxplus/resourceful_features.git"
+projects[resourceful_features][download][branch] = "7.x-1.x"
+
 ; Core functionality
 projects[ctools][subdir] = "contrib"
 projects[views][subdir] = "contrib"

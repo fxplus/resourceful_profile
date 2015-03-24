@@ -2,6 +2,8 @@ name = Resourceful
 description = Install profile based on Minimal.
 version = VERSION
 core = 7.x
+dependencies[] = resourceful_features
+
 dependencies[] = block
 dependencies[] = book
 dependencies[] = dblog
