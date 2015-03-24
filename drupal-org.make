@@ -13,8 +13,17 @@ projects[] = "drupal"
 ; Custom modules and features
 projects[resourceful_features][type] = "module"
 projects[resourceful_features][download][type] = "git"
-projects[resourceful_features][download][url] = "https://github.com/fxplus/resourceful_features.git"
+projects[resourceful_features][download][url] = "git@github.com:fxplus/resourceful_features.git"
 projects[resourceful_features][download][branch] = "7.x-1.x"
+
+projects[search_apex][type] = "module"
+projects[search_apex][download][type] = "git"
+projects[search_apex][download][url] = "git@github.com:tombola/search_apex.git"
+
+; projects[search_apex_feed][download][type] = ""
+; projects[search_apex_feed][download][url] = ""
+; projects[search_apex_feed][type] = "module"
+; projects[search_apex_feed][subdir] = "custom/search_apex/client"
 
 ; Core functionality
 projects[ctools][subdir] = "contrib"
@@ -132,10 +141,7 @@ projects[scheduler][subdir] = "contrib"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[search_apex_feed][download][type] = ""
-projects[search_apex_feed][download][url] = ""
-projects[search_apex_feed][type] = "module"
-projects[search_apex_feed][subdir] = "custom/search_apex/client"
+
 
 projects[search_api][subdir] = "contrib"
 
@@ -288,10 +294,6 @@ projects[plus_search_simple][type] = "module"
 projects[plus_search_simple2][download][type] = ""
 projects[plus_search_simple2][download][url] = ""
 projects[plus_search_simple2][type] = "module"
-
-projects[search_apex][type] = "module"
-projects[search_apex][download][type] = "git"
-projects[search_apex][download][url] = "git@github.com:tombola/search_apex.git"
 
 projects[userlike][type] = "module"
 projects[userlike][download][type] = "git"
