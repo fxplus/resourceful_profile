@@ -185,6 +185,9 @@ function resourceful_roles_permissions() {
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access content'));
 
+
+  user_role_grant_permissions('editor', array('access content'));
+
   $role = new stdClass();
   $role->name = 'editor';
   // $role->weight = 10;

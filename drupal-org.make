@@ -27,6 +27,8 @@ projects[module_filter][subdir] = "contrib"
 ;   projects[book_helper][subdir] = "contrib"
 ;projects[ccl][subdir] = "contrib"
 ;projects[entityreference_prepopulate][subdir] = "contrib"
+projects[link][subdir] = "contrib"
+projects[field_group][subdir] = "contrib"
 
 
 ; Development
@@ -49,6 +51,7 @@ projects[context][subdir] = "contrib"
 projects[ds][subdir] = "contrib"
 ;   projects[exclude_node_title][subdir] = "contrib"
 
+
 ; Search
 
 ;projects[facetapi][subdir] = "contrib"
@@ -61,7 +64,13 @@ projects[features][subdir] = "contrib"
 ;projects[feeds_tamper_php][subdir] = "contrib"
 ;projects[feeds_xpathparser][subdir] = "contrib"
 
-projects[field_group][subdir] = "contrib"
+
+; Remove ?
+projects[viewfield][subdir] = "contrib"
+
+
+
+
 
 projects[field_permissions][subdir] = "contrib"
 
@@ -150,7 +159,7 @@ projects[user_picture_field][subdir] = "contrib"
 
 projects[view_unpublished][subdir] = "contrib"
 
-projects[viewfield][subdir] = "contrib"
+
 
 projects[webform][subdir] = "contrib"
 
@@ -240,9 +249,9 @@ projects[lexicon_define][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
-projects[link][download][type] = ""
-projects[link][download][url] = ""
-projects[link][type] = "module"
+; projects[link][download][type] = ""
+; projects[link][download][url] = ""
+; projects[link][type] = "module"
 
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
